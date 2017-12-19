@@ -1733,5 +1733,12 @@ namespace PdfSharp.Drawing
     {
       get { return new XGraphicsPathInternals(this); }
     }
+
+        /// <summary>
+        /// Create path from WPF PathGeometry
+        /// </summary>
+      public static XGraphicsPath FromPathGeometry(PathGeometry geometry) {
+          return new XGraphicsPath { pathGeometry = geometry, fillMode = geometry.FillRule == FillRule.EvenOdd ? XFillMode.Alternate : XFillMode.Winding };
+      }
   }
 }
