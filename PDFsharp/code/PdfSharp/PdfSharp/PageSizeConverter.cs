@@ -54,13 +54,13 @@ namespace PdfSharp
       switch (value)
       {
         case PageSize.A0:
-          return new XSize(2380, 3368);
+          return new XSize(2384, 3370);
 
         case PageSize.A1:
-          return new XSize(1684, 2380);
+          return new XSize(1683, 2384);
 
         case PageSize.A2:
-          return new XSize(1190, 1684);
+          return new XSize(1190, 1683);
 
         case PageSize.A3:
           return new XSize(842, 1190);
